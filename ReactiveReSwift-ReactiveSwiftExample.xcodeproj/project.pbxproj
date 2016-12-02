@@ -12,7 +12,33 @@
 		9E4774D71DF149CB002EBA8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E4774D51DF149CB002EBA8B /* Main.storyboard */; };
 		9E4774D91DF149CB002EBA8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E4774D81DF149CB002EBA8B /* Assets.xcassets */; };
 		9E4774DC1DF149CB002EBA8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E4774DA1DF149CB002EBA8B /* LaunchScreen.storyboard */; };
+		9E4774E61DF14A8D002EBA8B /* ReactiveReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4774E31DF14A8D002EBA8B /* ReactiveReSwift.framework */; };
+		9E4774E71DF14A8D002EBA8B /* ReactiveReSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4774E31DF14A8D002EBA8B /* ReactiveReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9E4774E81DF14A8D002EBA8B /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4774E41DF14A8D002EBA8B /* ReactiveSwift.framework */; };
+		9E4774E91DF14A8D002EBA8B /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4774E41DF14A8D002EBA8B /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9E4774EA1DF14A8D002EBA8B /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4774E51DF14A8D002EBA8B /* Result.framework */; };
+		9E4774EB1DF14A8D002EBA8B /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4774E51DF14A8D002EBA8B /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9E4774F31DF14ABC002EBA8B /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4774EE1DF14ABC002EBA8B /* Actions.swift */; };
+		9E4774F41DF14ABC002EBA8B /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4774F01DF14ABC002EBA8B /* CounterReducer.swift */; };
+		9E4774F51DF14ABC002EBA8B /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4774F21DF14ABC002EBA8B /* AppState.swift */; };
+		9E4774F71DF14AE1002EBA8B /* ReactiveReSwiftBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4774F61DF14AE1002EBA8B /* ReactiveReSwiftBridge.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9E4774EC1DF14A8D002EBA8B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9E4774EB1DF14A8D002EBA8B /* Result.framework in Embed Frameworks */,
+				9E4774E71DF14A8D002EBA8B /* ReactiveReSwift.framework in Embed Frameworks */,
+				9E4774E91DF14A8D002EBA8B /* ReactiveSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9E4774CE1DF149CB002EBA8B /* ReactiveReSwift-ReactiveSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReactiveReSwift-ReactiveSwiftExample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +48,13 @@
 		9E4774D81DF149CB002EBA8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E4774DB1DF149CB002EBA8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E4774DD1DF149CB002EBA8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E4774E31DF14A8D002EBA8B /* ReactiveReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveReSwift.framework; path = Carthage/Build/iOS/ReactiveReSwift.framework; sourceTree = "<group>"; };
+		9E4774E41DF14A8D002EBA8B /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		9E4774E51DF14A8D002EBA8B /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		9E4774EE1DF14ABC002EBA8B /* Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		9E4774F01DF14ABC002EBA8B /* CounterReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
+		9E4774F21DF14ABC002EBA8B /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		9E4774F61DF14AE1002EBA8B /* ReactiveReSwiftBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveReSwiftBridge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +62,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E4774EA1DF14A8D002EBA8B /* Result.framework in Frameworks */,
+				9E4774E61DF14A8D002EBA8B /* ReactiveReSwift.framework in Frameworks */,
+				9E4774E81DF14A8D002EBA8B /* ReactiveSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +74,9 @@
 		9E4774C51DF149CB002EBA8B = {
 			isa = PBXGroup;
 			children = (
+				9E4774E31DF14A8D002EBA8B /* ReactiveReSwift.framework */,
+				9E4774E41DF14A8D002EBA8B /* ReactiveSwift.framework */,
+				9E4774E51DF14A8D002EBA8B /* Result.framework */,
 				9E4774D01DF149CB002EBA8B /* ReactiveReSwift-ReactiveSwiftExample */,
 				9E4774CF1DF149CB002EBA8B /* Products */,
 			);
@@ -54,6 +93,10 @@
 		9E4774D01DF149CB002EBA8B /* ReactiveReSwift-ReactiveSwiftExample */ = {
 			isa = PBXGroup;
 			children = (
+				9E4774F61DF14AE1002EBA8B /* ReactiveReSwiftBridge.swift */,
+				9E4774ED1DF14ABC002EBA8B /* Actions */,
+				9E4774EF1DF14ABC002EBA8B /* Reducers */,
+				9E4774F11DF14ABC002EBA8B /* State */,
 				9E4774D11DF149CB002EBA8B /* AppDelegate.swift */,
 				9E4774D31DF149CB002EBA8B /* ViewController.swift */,
 				9E4774D51DF149CB002EBA8B /* Main.storyboard */,
@@ -62,6 +105,30 @@
 				9E4774DD1DF149CB002EBA8B /* Info.plist */,
 			);
 			path = "ReactiveReSwift-ReactiveSwiftExample";
+			sourceTree = "<group>";
+		};
+		9E4774ED1DF14ABC002EBA8B /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				9E4774EE1DF14ABC002EBA8B /* Actions.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		9E4774EF1DF14ABC002EBA8B /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				9E4774F01DF14ABC002EBA8B /* CounterReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		9E4774F11DF14ABC002EBA8B /* State */ = {
+			isa = PBXGroup;
+			children = (
+				9E4774F21DF14ABC002EBA8B /* AppState.swift */,
+			);
+			path = State;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +141,7 @@
 				9E4774CA1DF149CB002EBA8B /* Sources */,
 				9E4774CB1DF149CB002EBA8B /* Frameworks */,
 				9E4774CC1DF149CB002EBA8B /* Resources */,
+				9E4774EC1DF14A8D002EBA8B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +204,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E4774F31DF14ABC002EBA8B /* Actions.swift in Sources */,
+				9E4774F51DF14ABC002EBA8B /* AppState.swift in Sources */,
+				9E4774F71DF14AE1002EBA8B /* ReactiveReSwiftBridge.swift in Sources */,
+				9E4774F41DF14ABC002EBA8B /* CounterReducer.swift in Sources */,
 				9E4774D41DF149CB002EBA8B /* ViewController.swift in Sources */,
 				9E4774D21DF149CB002EBA8B /* AppDelegate.swift in Sources */,
 			);
@@ -258,6 +330,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "ReactiveReSwift-ReactiveSwiftExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ReSwift.ReactiveReSwift-ReactiveSwiftExample";
@@ -270,6 +346,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "ReactiveReSwift-ReactiveSwiftExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ReSwift.ReactiveReSwift-ReactiveSwiftExample";
