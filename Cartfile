@@ -1,2 +1,2 @@
-github "Qata/ReactiveReSwift" "31ee6fb"
+github "ReSwift/ReactiveReSwift" ~> 3.0.0
 github "ReactiveCocoa/ReactiveSwift" ~> 1.0
