@@ -19,7 +19,6 @@ let middleware = Middleware<AppState>().sideEffect { _, _, action in
 // The global application store, which is responsible for managing the appliction state.
 let mainStore = Store(
     reducer: counterReducer,
-    stateType: AppState.self,
     observable: MutableProperty(AppState()),
     middleware: middleware
 )
